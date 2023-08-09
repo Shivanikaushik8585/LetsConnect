@@ -1,0 +1,42 @@
+.container{
+    max-width: 960px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: center;
+    text-align: right;
+     top:50px;
+position:fixed;
+background-color: white;
+    left: 20px;
+    margin-top: -53px;
+    height:60px;
+    border-bottom: 1px solid black;
+
+    /* background-color: rgb(129, 233, 233); */
+}
+.banner{
+    font-size: 30px;
+}
+.srcbtn{
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+
+}
+input{
+    width: 40vw;
+    height: 4vh;
+    padding: auto;
+    /* background-color: rgba(241, 225, 225, 0.568); */
+    border-radius: 6px;
+}
+.icon{
+    font-size: 30px;
+}
+.notification{
+margin-left: 50px;
+
+}
+

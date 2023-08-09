@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import './Sign.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { axiosClient } from '../Utilis/axiosClient';
 
 function Signup() {
   const[name,setName] = useState(" ");
   const[email,setEmail]= useState("");
   const[password,setPassword]= useState("");
+  const navigate = useNavigate()
   async function handleSubmit(e) {
     e.preventDefault();
     try{
@@ -17,6 +18,8 @@ function Signup() {
         password
       });
       console.log(result);
+      navigate('/login');
+
     }catch(e){
       console.log(e.message);
 
